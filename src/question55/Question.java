@@ -1,6 +1,9 @@
 package question55;
 import DataStructure.BinaryTreeNode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Question {
     public static int getBinaryTreeDepth(BinaryTreeNode root) {
         if (root == null)
@@ -18,5 +21,7 @@ public class Question {
         root .left.right.left = new BinaryTreeNode(7);
         root.right.right = new BinaryTreeNode(6);
         System.out.println("the Depth of tree is"+getBinaryTreeDepth(root));
+
+        Map<Integer, Integer> map = new HashMap<>();
     }
 }
